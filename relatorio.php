@@ -86,15 +86,14 @@
     $password = 'eZifGf4YiHVOqrA9zLuMJcfwZmK2ScJB';
 
     function mascararCPF($cpf) {
-      // Remove tudo que não for número
+      $cpf = $cpf ?? '';  // se $cpf for null, vira string vazia
       $numeros = preg_replace('/\D/', '', $cpf);
-    
-      // Se não tiver 11 dígitos, retorna o original
+      
       if (strlen($numeros) !== 11) return $cpf;
-    
-      // Formata com máscara
+      
       return substr($numeros, 0, 3) . '.***.***-' . substr($numeros, -2);
     }
+    
 
     try {
         // PostgreSQL → use pgsql | MySQL → mysql
@@ -108,7 +107,7 @@
             echo "<thead>
                     <tr>
                       <th>Nome</th>
-                      <th>CPFs" . mascararCPF($row['cpf']) . "</th>
+                      <th>CPF</th>
                       <th>Data de Nascimento</th>
                       <th>Sexo</th>
                       <th>Curso</th>
