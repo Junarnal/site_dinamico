@@ -1,0 +1,278 @@
+header {
+  background-color: #0b671a;
+  color: white;
+  padding: 20px 15px; /* Menor padding */
+  text-align: center;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; /* Menor distância entre h1 e nav */
+  max-width: 900px; /* Um pouco mais estreito */
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem; /* Reduzido de 2.5rem */
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px; /* Menor espaçamento entre links */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px; /* Um pouco menor */
+  padding: 4px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.3px;
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+header nav ul li a:after {
+  content: "";
+  position: absolute;
+  background-color: #facc15;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #facc15;
+}
+
+header nav ul li a:hover:after {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.div-banner {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #2d5c89;
+}
+
+.div-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.container-cursos 
+{
+  background-color: #f3a270cc;
+  display: list-item;
+  padding: 30px;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-cursos h2
+{
+  margin: 0px 0px;
+}
+
+.container-cursos h3
+{
+  margin: 0px 0px;
+}
+
+#layout_cursos
+{
+  display: flex;
+  padding: 15px;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.curso
+{
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 250px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.curso:hover
+{
+  transform: scale(1.05);
+  background-color: #d3d3d3;
+}
+
+.curso h3
+{
+  color: #ea580c; /* laranja IFMS */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.curso p 
+{
+  font-size: 16px;
+  color: #334155;
+}
+
+.botao-relatorio-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.botao-relatorio {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0b671a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.botao-relatorio:hover {
+  background-color: #0a5417;
+}
+
+.cronograma {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.cronograma h1 {
+  font-size: 2rem;
+  margin: 24px 0 10px;
+  font-weight: 700;
+  color: #0f172a;
+  text-transform: uppercase;
+}
+
+.cronograma h2 {
+  font-size: 1.5rem;
+  margin: 4px 0 16px;
+  font-weight: 600;
+}
+
+.cronograma p {
+  font-size: 1.1rem;
+  margin: 4px 0;
+}
+
+.bloco-beneficios {
+  background-color: #acb8c4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo-beneficios {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.container-beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.beneficio {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  min-width: 400px;
+  width: 35%;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.beneficio:hover {
+  transform: scale(1.03);
+}
+
+.icone {
+  max-width: 80px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+
+.bloco-sobre {
+  background-color: #2d5c89;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* Faz ficar em coluna no celular */
+}
+
+.container-sobre {
+  max-width: 700px;
+  text-align: left;
+}
+
+.container-sobre h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: white;
+  margin: 50px;
+}
+
+.imagem-sobre img {
+  max-width: 100%;
+  height: auto;
+}
+
+
