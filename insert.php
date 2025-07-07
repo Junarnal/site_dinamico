@@ -33,6 +33,9 @@ try {
     $curso = $_POST['inscrito_curso'];
     $turno = $_POST['inscrito_turno'];
 
+    $cpf = preg_replace('/\D/', '', $cpf);
+    $celular = preg_replace('/\D/', '', $celular);
+
     // Prepara e executa a SQL
     $stmt = $conexao->prepare("INSERT INTO inscritos (
         nome, cpf, data_nascimento, sexo, rg, orgao_expedidor, estado_civil,
