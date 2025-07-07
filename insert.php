@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$host = 'dpg-d1ljqpur433s73dqhng0-a.oregon-postgres.render.com';
+$host = 'site_ifms_eng_soft.internal';
 $port = '5432';
 $db_name = 'site_ifms_eng_soft';
 $user = 'adm_site';

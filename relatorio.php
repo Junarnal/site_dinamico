@@ -79,7 +79,7 @@
 
   <?php
     // 🔧 Configure suas credenciais:
-    $host = 'dpg-d1ljqpur433s73dqhng0-a.oregon-postgres.render.com';
+    $host = 'site_ifms_eng_soft.internal';
     $port = '5432';
     $dbname = 'site_ifms_eng_soft';
     $user = 'adm_site';
